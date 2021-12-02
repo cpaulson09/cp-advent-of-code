@@ -7,14 +7,13 @@ for command in commands:
 	number = int(command.split(' ')[1].strip())
 	if move == 'forward':
 		horizontalPosition += number
-		verticalPosition -= aim * number
+		verticalPosition -= aim * number # problem 2
 	elif move == 'back':
 		horizontalPosition -= number
 	elif move == 'up':
-		# verticalPosition -= number
-		aim -= number
+		verticalPosition -= number  # problem 1
+		aim -= number				# problem 2
 	elif move == 'down':
-		# verticalPosition += number
-		aim += number
-	print(horizontalPosition, verticalPosition, aim)
+		verticalPosition += number	# problem 1
+		aim += number				# problem 2
 print(horizontalPosition * -verticalPosition)
