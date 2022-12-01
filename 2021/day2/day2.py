@@ -1,4 +1,4 @@
-commands = open('day2.txt', 'r').readlines()
+commands = open('data.txt', 'r').readlines()
 horizontalPosition = 0
 verticalPosition = 0
 aim = 0
